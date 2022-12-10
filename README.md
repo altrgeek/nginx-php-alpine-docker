@@ -1,4 +1,4 @@
-# php-nginx-alpine
+# nginx-php-alpine-docker
 
 Lightweight php nginx server on an alpine image
 
