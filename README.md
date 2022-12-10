@@ -2,21 +2,21 @@
 
 Lightweight php nginx server on an alpine image
 
-Please &#9733; this repo if you found it useful &#9733; &#9733; &#9733;
-
 
 ## Features
 <!------------------------------------------------------->
 
-* Under 25 MB
-* PHP 7
+* Under 35 MB
+* Alpine 3.17
+* PHP 8.1.13-r0
+* Nginx 1.22.1-r0
 
 
 ## Installation
 <!------------------------------------------------------->
 
 ```sh
-docker run --name some-php-nginx-alpine -d -v /your/php/app:/app/www -p 8888:8888 jamrizzi/php-nginx-alpine:php7
+docker run --name some-php-nginx-alpine -d -v /your/php/app:/app/www -p 8888:8888 altrgeek/nginx-php-alpine:latest
 ```
 
 
@@ -29,15 +29,7 @@ docker run --name some-php-nginx-alpine -d -v /your/php/app:/app/www -p 8888:888
 ## Support
 <!------------------------------------------------------->
 
-Submit an [issue](https://github.com/jamrizzi/php-nginx-alpine/issues/new)
-
-
-## Buy Me Coffee
-<!------------------------------------------------------->
-
-A ridiculous amount of coffee was consumed in the process of building this project.
-
-[Add some fuel](https://jamrizzi.com/#!/buy-me-coffee) if you'd like to keep me going!
+Submit an [issue](https://github.com/altrgeek/php-nginx-alpine-docker/issues/new)
 
 
 ## Contributing
@@ -50,22 +42,14 @@ A ridiculous amount of coffee was consumed in the process of building this proje
 5. Submit a pull request :D
 
 
-## License
-<!------------------------------------------------------->
-
-[MIT License](https://github.com/jamrizzi/php-nginx-alpine/blob/master/LICENSE)
-
-[Jam Risser](https://jamrizzi.com) &copy; 2017
-
-
 ## Credits
 <!------------------------------------------------------->
 
-* [Jam Risser](https://jamrizzi.com) - Author
+* [Jam Risser](https://github.com/clayrisser/php-nginx-alpine-docker)
 
 
 ## Changelog
 <!------------------------------------------------------->
 
-0.0.1 (2017-05-10)
+0.0.1 (2012-12-10)
 * Initial release
