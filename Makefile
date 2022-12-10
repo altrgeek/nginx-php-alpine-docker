@@ -1,8 +1,8 @@
 SHELL := /bin/bash
 CWD := $(shell pwd)
-IMAGE := "jamrizzi/php-nginx-alpine:php7"
+IMAGE := "altrgeek/nginx-php-alpine:latest"
 SOME_CONTAINER := $(shell echo some-$(IMAGE) | sed 's/[^a-zA-Z0-9]//g')
-DOCKERFILE := $(CWD)/php7/Dockerfile
+DOCKERFILE := $(CWD)/Dockerfile
 
 .PHONY: all
 all: clean fetch_dependancies build
@@ -19,8 +19,8 @@ pull:
 
 .PHONY: push
 push:
-	@docker tag $(IMAGE) jamrizzi/php-nginx-alpine:latest
-	@docker push jamrizzi/php-nginx-alpine:latest
+	@docker tag $(IMAGE) altrgeek/nginx-php-alpine:latest
+	@docker push altrgeek/nginx-php-alpine:latest
 	@docker push $(IMAGE)
 	@echo pushed $(IMAGE)
 
