@@ -9,8 +9,7 @@ MAINTAINER Rumman Zaman (altrgeek)
 
 ENV DEBUG=false
 
-EXPOSE 80
-EXPOSE 443
+EXPOSE 80 443
 
 WORKDIR /app/
 
